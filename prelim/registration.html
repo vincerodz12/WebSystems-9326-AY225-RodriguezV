@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JPCS | Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav><a href="index.html" class="logo">JPCS<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="officers.html">Officers</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="registration.html">Join Us</a></li>
+        </ul></nav>
+    <section class="container" style="max-width:600px;">
+        <div class="card">
+            <h2>Membership Application</h2>
+            <p style="font-size:0.9rem; color:#666;">Progress is saved automatically.</p>
+            
+            <form id="registrationForm" style="margin-top:20px; text-align:left;">
+                <label>Full Name</label>
+                <input type="text" id="fullname" placeholder="Juan Dela Cruz" required>
+                
+                <label>Student Email</label>
+                <input type="email" id="email" placeholder="juan@university.edu.ph" required>
+                
+                <label>Student ID Number</label>
+                <input type="text" id="studentId" placeholder="2023-10XXX" required>
+                
+                <button type="submit" class="btn" style="width:100%;">Submit Registration</button>
+            </form>
+            <div id="statusMsg" style="margin-top:20px;"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
