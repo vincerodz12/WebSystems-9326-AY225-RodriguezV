@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JPCS | Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav><a href="index.html" class="logo">JPCS<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="officers.html">Officers</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="registration.html">Join Us</a></li>
+        </ul></nav>
+    <section class="container">
+        <h1>Events & Activities</h1>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn" onclick="filterEvents('all')">All</button>
+            <button class="filter-btn" onclick="filterEvents('workshop')">Workshops</button>
+            <button class="filter-btn" onclick="filterEvents('contest')">Contests</button>
+            <button class="filter-btn" onclick="filterEvents('seminar')">Seminars</button>
+        </div>
+
+        <div class="grid" id="eventGrid">
+            <div class="card event-card" data-category="workshop">
+                <h3>UI/UX Workshop</h3>
+                <p>Date: 2024-10-15</p>
+                <button class="btn" onclick="openEventModal(3)">Details</button>
+            </div>
+            <div class="card event-card" data-category="seminar">
+                <h3>Tech Summit</h3>
+                <p>Date: 2024-11-20</p>
+                <button class="btn" onclick="openEventModal(1)">Details</button>
+            </div>
+            <div class="card event-card" data-category="contest">
+                <h3>Hackathon</h3>
+                <p>Date: 2024-12-05</p>
+                <button class="btn" onclick="openEventModal(2)">Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Popup -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <p id="modalBody" style="margin:20px 0;"></p>
+            <button class="btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
